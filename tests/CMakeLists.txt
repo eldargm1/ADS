@@ -1,3 +1,2 @@
-create_executable_project(AllTests)
-target_link_libraries(AllTests gtest gtest_main)
-add_test(NAME AllTests COMMAND AllTests)
+add_executable(DS_TESTS test_easy_example.cpp)
+target_link_libraries(DS_TESTS PRIVATE Algorithms gtest gtest_main)
